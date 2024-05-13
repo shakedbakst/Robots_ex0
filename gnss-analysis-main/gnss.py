@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import navpy
 import sys
 from gnssutils import EphemerisManager
+import Utils
 
 
 parent_directory1 = os.path.split(os.getcwd())[0]
@@ -276,3 +277,5 @@ def create_new_array():
 
 
 create_new_array()
+xyz = Utils.calculate_positioning('data/sample/gnssCsv.csv', "2024-04-13 16:51:55.417345280+00:00")
+Utils.xyz_to_lat_lon_alt(xyz[0], xyz[1], xyz[2])

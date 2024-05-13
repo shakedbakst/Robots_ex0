@@ -73,7 +73,3 @@ def calculate_positioning(file_path, gps_time):
     position = positioning_algorithm(filtered_data)
     print("Computed position (X, Y, Z):", position)
     return position
-
-
-xyz = calculate_positioning('data/sample/gnssCsv.csv', "2024-04-13 16:51:55.417345280+00:00")
-xyz_to_lat_lon_alt(xyz[0], xyz[1], xyz[2])
