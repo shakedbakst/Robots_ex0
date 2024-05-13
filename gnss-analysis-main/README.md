@@ -1,3 +1,7 @@
+# how to run?
+
+before running the program "gnss.py" make sure to change the name of the data file you want to use. you can change it on line 18 of the program.
+
 # gnss-analysis
 
 This repository is a collection of Python notebooks and utility modules for processing GNSS data. The primary source of this data is raw GNSS measurements from Android phones, but the utilities and positioning algorithms should be applicable to measurements from other sources as well.
